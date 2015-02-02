@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="4" name="core.AppTest" time="0.037" errors="0" skipped="2">
+<testsuite tests="10" failures="4" name="core.AppTest" time="0.033" errors="0" skipped="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
@@ -62,13 +62,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="core.AppTest" name="Test_07_assertFalse_Positive" time="0.007"/>
-  <testcase classname="core.AppTest" name="Test_04_AssertSame_Positive" time="0.002"/>
-  <testcase classname="core.AppTest" name="Test_09_assertTrue_Positive" time="0.001"/>
-  <testcase classname="core.AppTest" name="Test_03_assertEquals_Ignored" time="0.001">
+  <testcase classname="core.AppTest" name="Test_07_assertFalse_Positive" time="0.006"/>
+  <testcase classname="core.AppTest" name="Test_04_AssertSame_Positive" time="0.001"/>
+  <testcase classname="core.AppTest" name="Test_09_assertTrue_Positive" time="0.002"/>
+  <testcase classname="core.AppTest" name="Test_03_assertEquals_Ignored" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_05_AssertSame_Negative" time="0.015">
+  <testcase classname="core.AppTest" name="Test_05_AssertSame_Negative" time="0.009">
     <failure message="should be the same expected same:&lt;25645&gt; was not:&lt;72185&gt;" type="java.lang.AssertionError">java.lang.AssertionError: should be the same expected same:&lt;25645&gt; was not:&lt;72185&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotSame(Assert.java:828)
@@ -113,7 +113,7 @@ Test_05_AssertSame_Negative
 AfterClass method will be executed after last test method completed
 </system-out>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_10_assertTrue_Negative" time="0.005">
+  <testcase classname="core.AppTest" name="Test_10_assertTrue_Negative" time="0.004">
     <failure message="failure - should be true" type="java.lang.AssertionError">java.lang.AssertionError: failure - should be true
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -158,7 +158,7 @@ AfterClass method will be executed after last test method completed
 </system-out>
   </testcase>
   <testcase classname="core.AppTest" name="Test_01_assertEquals_Positive" time="0.002"/>
-  <testcase classname="core.AppTest" name="Test_08_assertFalse_Negative" time="0.001">
+  <testcase classname="core.AppTest" name="Test_08_assertFalse_Negative" time="0.002">
     <failure message="failure - shoild be false" type="java.lang.AssertionError">java.lang.AssertionError: failure - shoild be false
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -203,7 +203,7 @@ Test_08_assertFalse_Negative
 AfterClass method will be executed after last test method completed
 </system-out>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_06_AssertSame_Ignored" time="0.001">
+  <testcase classname="core.AppTest" name="Test_06_AssertSame_Ignored" time="0.002">
     <skipped/>
   </testcase>
   <testcase classname="core.AppTest" name="Test_02_assertEquals_Negative" time="0.002">

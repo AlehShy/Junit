@@ -100,7 +100,7 @@ public class AppTest {
 		Boolean tr = true;
 		assertTrue("failure - should be true", tr);
 	}
-	
+
 	@Test
 	public void Test_08_assertFalse_Negative() {
 		System.out.println("Test_08_assertFalse_Negative");

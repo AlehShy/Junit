@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: core.AppTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 0, Skipped: 2, Time elapsed: 0.125 sec <<< FAILURE!
-Test_05_AssertSame_Negative(core.AppTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 2, Time elapsed: 0.103 sec <<< FAILURE!
+Test_05_AssertSame_Negative(core.AppTest)  Time elapsed: 0.009 sec  <<< FAILURE!
 java.lang.AssertionError: should be the same expected same:<25645> was not:<72185>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotSame(Assert.java:828)
@@ -42,7 +42,7 @@ java.lang.AssertionError: should be the same expected same:<25645> was not:<7218
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Test_10_assertTrue_Negative(core.AppTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+Test_10_assertTrue_Negative(core.AppTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.AssertionError: failure - should be true
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
@@ -81,7 +81,7 @@ java.lang.AssertionError: failure - should be true
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Test_08_assertFalse_Negative(core.AppTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+Test_08_assertFalse_Negative(core.AppTest)  Time elapsed: 0.002 sec  <<< FAILURE!
 java.lang.AssertionError: failure - shoild be false
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
