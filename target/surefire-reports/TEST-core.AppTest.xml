@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="4" name="core.AppTest" time="0.033" errors="0" skipped="2">
+<testsuite tests="10" failures="4" name="core.AppTest" time="0.023" errors="0" skipped="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
@@ -43,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_25\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher site install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,18 +62,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="core.AppTest" name="Test_07_assertFalse_Positive" time="0.006"/>
-  <testcase classname="core.AppTest" name="Test_04_AssertSame_Positive" time="0.001"/>
-  <testcase classname="core.AppTest" name="Test_09_assertTrue_Positive" time="0.002"/>
-  <testcase classname="core.AppTest" name="Test_03_assertEquals_Ignored" time="0.003">
+  <testcase classname="core.AppTest" name="Test_07_assertFalse_Positive" time="0.011"/>
+  <testcase classname="core.AppTest" name="Test_04_AssertSame_Positive" time="0"/>
+  <testcase classname="core.AppTest" name="Test_09_assertTrue_Positive" time="0"/>
+  <testcase classname="core.AppTest" name="Test_03_assertEquals_Ignored" time="0.008">
     <skipped/>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_05_AssertSame_Negative" time="0.009">
-    <failure message="should be the same expected same:&lt;25645&gt; was not:&lt;72185&gt;" type="java.lang.AssertionError">java.lang.AssertionError: should be the same expected same:&lt;25645&gt; was not:&lt;72185&gt;
+  <testcase classname="core.AppTest" name="Test_05_AssertSame_Negative" time="0.004">
+    <failure message="should be the same expected same:&lt;435&gt; was not:&lt;55&gt;" type="java.lang.AssertionError">java.lang.AssertionError: should be the same expected same:&lt;435&gt; was not:&lt;55&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotSame(Assert.java:828)
 	at org.junit.Assert.assertSame(Assert.java:771)
-	at core.AppTest.Test_05_AssertSame_Negative(AppTest.java:75)
+	at core.AppTest.Test_05_AssertSame_Negative(AppTest.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,16 +108,12 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>Before method will execute before every test method
-Test_05_AssertSame_Negative
-AfterClass method will be executed after last test method completed
-</system-out>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_10_assertTrue_Negative" time="0.004">
-    <failure message="failure - should be true" type="java.lang.AssertionError">java.lang.AssertionError: failure - should be true
+  <testcase classname="core.AppTest" name="Test_10_assertTrue_Negative" time="0">
+    <failure message="failure - Boolean should be true" type="java.lang.AssertionError">java.lang.AssertionError: failure - Boolean should be true
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at core.AppTest.Test_10_assertTrue_Negative(AppTest.java:116)
+	at core.AppTest.Test_10_assertTrue_Negative(AppTest.java:107)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,18 +148,14 @@ AfterClass method will be executed after last test method completed
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>Before method will execute before every test method
-Test_10_assertTrue_Negative
-AfterClass method will be executed after last test method completed
-</system-out>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_01_assertEquals_Positive" time="0.002"/>
-  <testcase classname="core.AppTest" name="Test_08_assertFalse_Negative" time="0.002">
-    <failure message="failure - shoild be false" type="java.lang.AssertionError">java.lang.AssertionError: failure - shoild be false
+  <testcase classname="core.AppTest" name="Test_01_assertEquals_Positive" time="0"/>
+  <testcase classname="core.AppTest" name="Test_08_assertFalse_Negative" time="0">
+    <failure message="failure - Boolean shoild be false" type="java.lang.AssertionError">java.lang.AssertionError: failure - Boolean shoild be false
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertFalse(Assert.java:64)
-	at core.AppTest.Test_08_assertFalse_Negative(AppTest.java:108)
+	at core.AppTest.Test_08_assertFalse_Negative(AppTest.java:92)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -198,18 +190,14 @@ AfterClass method will be executed after last test method completed
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>Before method will execute before every test method
-Test_08_assertFalse_Negative
-AfterClass method will be executed after last test method completed
-</system-out>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_06_AssertSame_Ignored" time="0.002">
+  <testcase classname="core.AppTest" name="Test_06_AssertSame_Ignored" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="core.AppTest" name="Test_02_assertEquals_Negative" time="0.002">
-    <failure message="failure-strings are not equals expected:&lt;[orang]e&gt; but was:&lt;[blu]e&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: failure-strings are not equals expected:&lt;[orang]e&gt; but was:&lt;[blu]e&gt;
+  <testcase classname="core.AppTest" name="Test_02_assertEquals_Negative" time="0">
+    <failure message="failure-strings are not equals expected:&lt;Testing [TestNG 6]&gt; but was:&lt;Testing [JUnit 4]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: failure-strings are not equals expected:&lt;Testing [TestNG 6]&gt; but was:&lt;Testing [JUnit 4]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
-	at core.AppTest.Test_02_assertEquals_Negative(AppTest.java:54)
+	at core.AppTest.Test_02_assertEquals_Negative(AppTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -244,9 +232,5 @@ AfterClass method will be executed after last test method completed
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>Before method will execute before every test method
-Test_02_assertEquals_Negative
-AfterClass method will be executed after last test method completed
-</system-out>
   </testcase>
 </testsuite>
